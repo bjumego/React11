@@ -24,7 +24,7 @@ export default class PostAddForm extends Component {
         });
     }
     render() {
-        returm (
+        return (
             <form
             className="bottom-panel d-flex"
             onSubmit={this.onSubmit}>
@@ -40,8 +40,6 @@ export default class PostAddForm extends Component {
                     className="btn btn-outline-secondary">
                     Добавить
                     </button>
-
-
              </form>        
           )                    
         }   

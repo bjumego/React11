@@ -1,4 +1,4 @@
-import React,{Component} from "react";
+import React, {Component} from 'react';
 
 import './post-status-filter.css';
 
@@ -8,10 +8,11 @@ export default class PostStatusFilter extends Component {
         super(props);
         this.buttons = [
             {name: 'all', label: 'Все'},
-            {name: 'like', label: 'Понравилось'},
+            {name: 'like', label: 'Понравилось'}
         ];
     }
     render() {
+        
         const  buttons = this.buttons.map(({name, label}) => {
             const {filter, onFilterSelect} = this.props;
             const active = filter === name;

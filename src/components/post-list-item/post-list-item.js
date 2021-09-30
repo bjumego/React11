@@ -5,10 +5,13 @@ import './post-list-item.css'
 export default class PostListItem extends Component {
 
     render() {
-        const {laber, onDelete, onToggleImportant, onToggleLiked, like, important} = this.props;
+        const {label, onDelete, onToggleImportant, onToggleLiked, like, important} = this.props;
         let classNames = 'app-list-item d-flex justify-content-between';
 
         if (important) {
+            classNames +=' like';
+        }
+        if (like) {
             classNames +=' like';
         }
         
@@ -33,6 +36,9 @@ export default class PostListItem extends Component {
                 <i className="fa fa-trash-o"></i>
             </button>
             <i className="fa fa-heart"></i>
-            <div>
+            </div>
                 
             </div>
+            )
+            }
+            }
