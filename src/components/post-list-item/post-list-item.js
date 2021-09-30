@@ -9,7 +9,7 @@ export default class PostListItem extends Component {
         let classNames = 'app-list-item d-flex justify-content-between';
 
         if (important) {
-            classNames +=' like';
+            classNames +=' important';
         }
         if (like) {
             classNames +=' like';
